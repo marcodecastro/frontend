@@ -47,7 +47,7 @@ const CapituloRealArco = () => {
             };
         });
 
-        const response = await fetchWithToken('http://localhost:5000/api/capitulorealarco', {
+        const response = await fetchWithToken('https://backend-v6ye.onrender.com:5000/api/capitulorealarco', {
             method: 'POST',
             body: JSON.stringify({ cim: memberId, graus_capitulorealarco: formattedDegrees })
         });

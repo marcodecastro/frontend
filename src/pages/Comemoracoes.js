@@ -17,7 +17,7 @@ const Comemoracoes = () => {
     useEffect(() => {
         const fetchComemoracoesHoje = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/comemoracoes/comemoracoes');
+                const response = await fetch('https://backend-v6ye.onrender.com:5000/api/comemoracoes/comemoracoes');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }

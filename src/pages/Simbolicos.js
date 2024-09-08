@@ -388,7 +388,7 @@ const Simbolicos = ({ simbolicosId }) => {
 
       console.log('Payload enviado:', JSON.stringify(payload));
 
-      const response = await fetchWithToken('http://localhost:5000/api/simbolicos', {
+      const response = await fetchWithToken('https://backend-v6ye.onrender.com:5000/api/simbolicos', {
         method: simbolicosId ? 'PUT' : 'POST', // Utiliza PUT para atualização, se o ID existir
         body: JSON.stringify(payload)
       });

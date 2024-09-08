@@ -42,7 +42,7 @@ const Esposa = ({ esposaId }) => {
     
     try {
       setLoading(true);
-      const response = await fetchWithToken('http://localhost:5000/api/esposa', {
+      const response = await fetchWithToken('https://backend-v6ye.onrender.com:5000/api/esposa', {
         method: 'POST',
         body: JSON.stringify({ 
           nome: spouseName, 

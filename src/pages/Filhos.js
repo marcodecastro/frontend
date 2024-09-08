@@ -17,7 +17,7 @@ const Filho = ({ filhoId }) => {
   useEffect(() => {
     const fetchFilhoData = async () => {
       try {
-        const response = await fetchWithToken(`http://localhost:5000/api/filhos/${filhoId}`);
+        const response = await fetchWithToken(`https://backend-v6ye.onrender.com:5000/api/filhos/${filhoId}`);
         const data = await response.json();
         setFilhoName(data.nome);
         setFilhoBirthDate(moment(data.data_nascimento).format('YYYY-MM-DD'));

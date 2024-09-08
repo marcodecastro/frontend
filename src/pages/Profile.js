@@ -14,8 +14,8 @@ const Profile = () => {
         const fetchProfileData = async () => {
             try {
                 // Fetching profile data and events data
-                const profileResponse = await fetchWithToken('http://localhost:5000/api/profile');
-                const eventsResponse = await fetchWithToken('http://localhost:5000/api/events');
+                const profileResponse = await fetchWithToken('https://backend-v6ye.onrender.com:5000/api/profile');
+                const eventsResponse = await fetchWithToken('https://backend-v6ye.onrender.com:5000/api/events');
     
                 // Checking and handling profile data response
                 if (profileResponse && profileResponse.member && profileResponse.comemoracoes) {

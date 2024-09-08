@@ -45,7 +45,7 @@ const Instalacao = () => {
             };
         });
 
-        const response = await fetchWithToken('http://localhost:5000/api/instalacao', {
+        const response = await fetchWithToken('https://backend-v6ye.onrender.com:5000/api/instalacao', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

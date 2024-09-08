@@ -19,7 +19,7 @@ const Casamento = ({ casamentoId }) => {
   useEffect(() => {
     const fetchCasamentoData = async () => {
       try {
-        const response = await fetchWithToken(`http://localhost:5000/api/casamento/${casamentoId}`);
+        const response = await fetchWithToken(`https://backend-v6ye.onrender.com:5000/api/casamento/${casamentoId}`);
         const data = await response.json();
         setCasamento(data.nome_conjuge);
         setDataCasamento(moment(data.data_casamento).format('YYYY-MM-DD'));

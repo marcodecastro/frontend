@@ -30,7 +30,7 @@ const Membro = () => {
     setSuccessMessage(null);
 
     try {
-      const data = await fetchWithToken('http://localhost:5000/api/membro', {
+      const data = await fetchWithToken('https://backend-v6ye.onrender.com:5000/api/membro', {
         method: 'POST',
         body: JSON.stringify({
           nome: memberName,

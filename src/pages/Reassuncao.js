@@ -45,7 +45,7 @@ const Reassuncao = () => {
             };
         });
 
-        const response = await fetchWithToken('http://localhost:5000/api/reassuncao', {
+        const response = await fetchWithToken('https://backend-v6ye.onrender.com:5000/api/reassuncao', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

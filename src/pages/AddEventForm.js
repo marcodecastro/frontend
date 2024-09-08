@@ -29,14 +29,16 @@ const AddEventForm = () => {
     try {
       let response;
       if (eventData.id) { // Se o evento já tem um ID, atualize-o
-        response = await fetch(`http://localhost:5000/api/events/${eventData.id}`, {
+        //response = await fetch(`http://localhost:5000/api/events/${eventData.id}`, {
+        response = await fetch(`https://backend-v6ye.onrender.com:5000/api/events/${eventData.id}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(eventData),
         });
       } else { // Se o evento não tem um ID, crie um novo
-        response = await fetch('http://localhost:5000/api/events', {
-          method: 'POST',
+        //response = await fetch('http://localhost:5000/api/events', {
+        response = await fetch('https://backend-v6ye.onrender.com:5000/api/events', {
+                   method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(eventData),
         });
